@@ -10,68 +10,87 @@
 import codecs, os
 import numpy as np
 import pandas as pd
+from models.bert import tokenization
 
-class Data:
-    def __init__(self, train=True):
-        # if train:
-        #     path = os.path.join(root_path, 'train/')
-        #     print('loading train data')
-        # else:
-        #     path = os.path.join(root_path, 'test/')
-        #     print('loading test data')
 
-        e2id = np.load('../source/e2id.npy').item() # 这里一定要加item()！
-        rel2id = np.load('../source/rel2id.npy').item()
+class InputExample(object):
+    """A single training/test example for simple sequence classification."""
 
-        self.bags_feature = []
-        self.bags_label = []
+    def __init__(self, guid, text_a, text_b=None, label=None):
+        """Constructs a InputExample.
+
+        Args:
+          guid: Unique id for the example.
+          text_a: string. The untokenized text of the first sequence.
+          text_b: string. The untokenized text of the second sequence.
+          label: string. The label of the example. This should be specified for train and dev examples, but not for test examples.
+        """
+        self.guid = guid
+        self.text_a = text_a
+        self.text_b = text_b
+        self.label = label
+
+
+class Data(object):
+    """Processor for the BC5CDR corpus."""
+
+    def get_train_examples(self, training_data):
+        return self._create_examples(
+            self._read_file(training_data), "train")
+
+    def get_dev_examples(self, dev_data):
+        return self._create_examples(
+            self._read_file(dev_data), "dev")
+
+    def get_test_examples(self, test_data):
+        return self._create_examples(
+            self._read_file(test_data), "test")
+
+    # TODO 如果要改标签种类，这里要记得变更！！！
+    def get_labels(self):
+        """See base class."""
+        return ['0', '1', '2', '3', '4']
+
+    def _read_file(self, input_file):
+        rel2id = np.load('../source/rel2id.npy').item()  # 这里一定要加item()！
+
+        bags = []
         with codecs.open('../source/preprocess.txt', 'r', 'utf8') as reader:
             while 1:
                 line = reader.readline().strip()
                 if not line:
                     break
                 section_list = line.split('\t')
-                e1_id = int(e2id[section_list[0]])
-                e2_id = int(e2id[section_list[1]])
-                label_id = int(rel2id[section_list[2]])
-                self.bags_label.append(label_id)
 
+                label_id = rel2id[section_list[2]]
+
+                # TODO 加入e1,e2的描述信息，到包feature中
+
+                one_bag_sentence = []
                 num = int(section_list[-1])
-                this_bag_feature = [e1_id,e2_id]
-                #TODO 加入e1,e2的描述信息，到包feature中
-
-                this_bag_sentence = []
                 for i in range(num):
-                    sent = reader.readline().strip() # sent是真实的每个bag中的每个句子
-                    this_bag_sentence.append(sent)
-                this_bag_feature.append(this_bag_sentence)
-                self.bags_feature.append(this_bag_feature)
+                    sent = reader.readline().strip()  # sent是真实的每个bag中的每个句子
+                    one_bag_sentence.append(sent)
+                one_bag = [label_id, one_bag_sentence]
+                bags.append(one_bag)
+                np.random.shuffle(bags)
 
-        # self.bags_feature =
-        # [[3, 6, ['考来烯胺、矿物油、新霉素、硫糖铝能干扰本品中维生素A的吸收。']],
-        #  [8, 1, ['抗酸药（如氢氧化铝）可影响本品中维生素A的吸收，故不应同服。']],
-        #  [9, 1, ['链霉素可提高血浆维生素A的浓度。']],
-        #  [0, 5, ['阿司匹林不应与含有大量镁、钙的药物合用。以免引起高镁、高钙血症。']],
-        #  [5, 7, ['抗酸药（如氢氧化铝）可影响本品中维生素A的吸收，故不应同服。']],
-        #  [2, 1, ['大量维生素A与抗凝药（如香豆素）同服，可导致凝血酶原降低。', '与香豆素同用，可增加维生素A的吸收，增加其肝内贮存量，加速利用和降低毒性，但大量香豆素可消耗维生素A在体内的贮存。']],
-        #  [4, 7, ['高锰酸钾如与其他药物（青霉素）同时使用可能会发生药物相互作用，详情请咨询医师或药师。']]]
+        # bags= [[3, ['新霉素、硫糖铝能干扰维生素A的吸收。', '与香豆素同用，可增加维生素A的吸收，增加其肝内贮存量]],...]
+        return bags
 
-        # self.bags_label =
-        # [3, 1, 1, 0, 3, 2, 4]
+    def _create_examples(self, lines, set_type):
+        """Creates examples for the training and dev sets."""
+        examples = []
+        for (i, line) in enumerate(lines):
 
-        # self.labels = np.load('../source/e2id.npy')
-        # self.x = np.load('../source/rel2id.npy')
-        # # 好关键哦！！把两个融合了。。
-        # self.x = zip(self.x, self.labels)
-
-        print('data finish !')
-
-    def __getitem__(self, idx):
-        assert idx < len(self.bags_feature)
-        return self.bags_feature[idx]
-
-    def __len__(self):
-        return len(self.bags_label)
+            guid = "%s-%s" % (set_type, str(i))
+            texts = []
+            for text in line[1]:  # line[1] is a list !
+                texts.append(tokenization.convert_to_unicode(text))
+            label = tokenization.convert_to_unicode(line[0])  # label位于第一个位置
+            examples.append(
+                InputExample(guid=guid, text_a=texts, label=label))  # text_a is a list !
+        return examples
 
 class Data_Preprocess:
     def __init__(self):
@@ -98,7 +117,7 @@ class Data_Preprocess:
         for index, e in enumerate(e_set):
             e2id[e] = index
         # print(e2id)
-        rel2id = {'NA':0,'禁忌合用':1,'谨慎合用':2,'不推荐合用':3,'关注':4}
+        rel2id = {'NA': '0', '禁忌合用': '1', '谨慎合用': '2', '不推荐合用': '3', '关注': '4'}
         # print(rel2id)
 
         # 判别e1,e2相同时，rel是否相同，不同返回所有rel值，要提醒洗数据
@@ -136,9 +155,10 @@ class Data_Preprocess:
 
 
 if __name__ == '__main__':
-    # d = Data_Preprocess()
-    d = Data(train=True)
-    print('bags_feature: ',d.bags_feature)
-    print('bags_label: ',d.bags_label)
-    print('e2id: ',np.load('../source/e2id.npy').item())
-    print('rel2id: ', np.load('../source/rel2id.npy').item())
+    # Data_Preprocess()
+    # d = Data()
+    # print('bags_feature: ',d.bags)
+    # print('bags_label: ',d.bags_label)
+    # print('e2id: ',np.load('../source/e2id.npy').item())
+    # print('rel2id: ', np.load('../source/rel2id.npy').item())
+    print(Data().get_train_examples(training_data='1'))

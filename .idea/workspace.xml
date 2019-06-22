@@ -1,7 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da0fd842-b9ac-4925-b5d7-59df488af4a5" name="Default Changelist" comment="" />
+    <list default="true" id="da0fd842-b9ac-4925-b5d7-59df488af4a5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/datasets/data_Medical_github.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/bert/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/model_bert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/bert.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/.idea/bert.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/atec_rnn_similar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/bert_as_feature.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/create_pretraining_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/data/atec/dev.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/data/atec/train.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/extract_features.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/general_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/get_started/custom_estimator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/get_started/estimator_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/get_started/iris_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/get_started/premade_estimator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/modeling.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/modeling_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/optimization.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/optimization_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/run_classifier.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/run_classifier_predict_online.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/run_pretraining.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/tokenization.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fork_bert_master/tokenization_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/沉沉的.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/e2id.npy" beforeDir="false" afterPath="$PROJECT_DIR$/source/e2id.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/rel2id.npy" beforeDir="false" afterPath="$PROJECT_DIR$/source/rel2id.npy" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,67 +52,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="744">
+              <caret line="153" column="30" selection-start-line="153" selection-start-column="30" selection-end-line="153" selection-end-column="30" />
               <folding>
-                <element signature="e#179#202#0" expanded="true" />
+                <element signature="n#!!doc" />
+                <element signature="e#4034#4052#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/bert.py">
+        <entry file="file://$PROJECT_DIR$/models/model_bert.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-35">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="136">
+              <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
               <folding>
                 <element signature="e#179#189#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/fork_bert_master/bert_as_feature.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-20">
-              <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
-              <folding>
-                <element signature="e#16#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/fork_bert_master/extract_features.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="208" column="22" lean-forward="true" selection-start-line="208" selection-start-column="22" selection-end-line="208" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/models/fork_bert_master/run_classifier.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="116" column="23" lean-forward="true" selection-start-line="116" selection-start-column="23" selection-end-line="116" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/datasets/data1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1081">
-              <caret line="98" selection-start-line="98" selection-end-line="98" />
-              <folding>
-                <element signature="e#185#227#0" expanded="true" />
+                <element signature="e#2266#2294#0" />
               </folding>
             </state>
           </provider>
@@ -79,29 +81,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/datasets/data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="93" column="25" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
+            <state relative-caret-position="-1595">
+              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/datasets/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/datasets/data1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2887">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/datasets/data_Medical_github.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="566">
+              <caret line="111" column="73" selection-start-line="111" selection-start-column="73" selection-end-line="111" selection-end-column="73" />
               <folding>
-                <element signature="e#179#192#0" expanded="true" />
+                <element signature="e#1967#2001#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/沉沉的.py">
+        <entry file="file://$PROJECT_DIR$/source/preprocess.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-96">
-              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/train.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="330">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -119,7 +139,12 @@
     <findStrings>
       <find>print</find>
       <find>MaskedGlobalMaxPool1D</find>
+      <find>text_a</find>
+      <find>example.label</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -129,7 +154,6 @@
         <option value="$PROJECT_DIR$/trainer/trainer.py" />
         <option value="$PROJECT_DIR$/data/data_loader.py" />
         <option value="$PROJECT_DIR$/trainer/__init__.py" />
-        <option value="$PROJECT_DIR$/models/__init__.py" />
         <option value="$PROJECT_DIR$/data_loader/hhh.py" />
         <option value="$PROJECT_DIR$/data_loader/data_loader.py" />
         <option value="$PROJECT_DIR$/datasets/data_loader.py" />
@@ -140,10 +164,16 @@
         <option value="$PROJECT_DIR$/models/firstmodel.py" />
         <option value="$PROJECT_DIR$/datasets/__init__.py" />
         <option value="$PROJECT_DIR$/models/fork_bert_master/bert_as_feature.py" />
-        <option value="$PROJECT_DIR$/models/bert.py" />
-        <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/datasets/data.py" />
         <option value="$PROJECT_DIR$/models/沉沉的.py" />
+        <option value="$PROJECT_DIR$/models/bert-master/__init__.py" />
+        <option value="$PROJECT_DIR$/models/bert/__init__.py" />
+        <option value="$PROJECT_DIR$/models/bert.py" />
+        <option value="$PROJECT_DIR$/models/__init__.py" />
+        <option value="$PROJECT_DIR$/datasets/data_Medical_github.py" />
+        <option value="$PROJECT_DIR$/datasets/data.py" />
+        <option value="$PROJECT_DIR$/models/model_bert.py" />
+        <option value="$PROJECT_DIR$/models/bert/tokenization.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -156,6 +186,9 @@
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -183,7 +216,7 @@
               <item name="RelationExperient" type="b2602c69:ProjectViewProjectNode" />
               <item name="RelationExperient" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="fork_bert_master" type="462c0819:PsiDirectoryNode" />
+              <item name="bert" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RelationExperient" type="b2602c69:ProjectViewProjectNode" />
@@ -356,12 +389,12 @@
       <workItem from="1557846122407" duration="7304000" />
       <workItem from="1558019958082" duration="1842000" />
       <workItem from="1559052587479" duration="41000" />
-      <workItem from="1559736350175" duration="43090000" />
+      <workItem from="1559736350175" duration="65470000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52277000" />
+    <option name="totallyTimeSpent" value="74657000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -381,7 +414,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32923833" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24938574" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.17567568" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -407,7 +440,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/RelationExperient$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1558150821660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trainer" />
-    <SUITE FILE_PATH="coverage/RelationExperient$data.coverage" NAME="data Coverage Results" MODIFIED="1560653686918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/datasets" />
+    <SUITE FILE_PATH="coverage/RelationExperient$data.coverage" NAME="data Coverage Results" MODIFIED="1560949966118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/datasets" />
     <SUITE FILE_PATH="coverage/RelationExperient$bert_as_feature.coverage" NAME="bert_as_feature Coverage Results" MODIFIED="1560615221348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models/fork_bert_master" />
     <SUITE FILE_PATH="coverage/RelationExperient$__init____1_.coverage" NAME="__init__ (1) Coverage Results" MODIFIED="1560615387201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/datasets" />
   </component>
@@ -423,13 +456,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -467,13 +493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datasets/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -481,29 +500,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/models/fork_bert_master/atec_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="e#179#202#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="308">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/preprocess.txt">
+    <entry file="file://$PROJECT_DIR$/models/fork_bert_master/run_classifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        <state relative-caret-position="-3773">
+          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datasets/data1.py">
+    <entry file="file://$PROJECT_DIR$/models/沉沉的.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1081">
-          <caret line="98" selection-start-line="98" selection-end-line="98" />
+        <state relative-caret-position="264">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/fork_bert_master/extract_features.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="287" column="31" selection-start-line="287" selection-start-column="31" selection-end-line="287" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/fork_bert_master/bert_as_feature.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
-            <element signature="e#185#227#0" expanded="true" />
+            <element signature="e#16#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -515,54 +545,101 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/bert/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/data_PCNN.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/bert/extract_features.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="80" selection-start-line="80" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/data1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2887">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/data_Medical_github.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="111" column="73" selection-start-line="111" selection-start-column="73" selection-end-line="111" selection-end-column="73" />
+          <folding>
+            <element signature="e#1967#2001#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/bert/run_classifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="780" selection-start-line="768" selection-end-line="780" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/preprocess.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/datasets/data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="93" column="25" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
-          <folding>
-            <element signature="e#179#192#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1595">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/沉沉的.py">
+    <entry file="file://$PROJECT_DIR$/models/model_bert.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-96">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/bert.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-35">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="136">
+          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
           <folding>
             <element signature="e#179#189#0" expanded="true" />
+            <element signature="e#2266#2294#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/fork_bert_master/extract_features.py">
+    <entry file="file://$PROJECT_DIR$/models/bert/tokenization.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="208" column="22" lean-forward="true" selection-start-line="208" selection-start-column="22" selection-end-line="208" selection-end-column="22" />
+        <state relative-caret-position="341">
+          <caret line="184" column="37" selection-start-line="184" selection-start-column="37" selection-end-line="184" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/fork_bert_master/bert_as_feature.py">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20">
-          <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+        <state relative-caret-position="744">
+          <caret line="153" column="30" selection-start-line="153" selection-start-column="30" selection-end-line="153" selection-end-column="30" />
           <folding>
-            <element signature="e#16#39#0" expanded="true" />
+            <element signature="n#!!doc" />
+            <element signature="e#4034#4052#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/fork_bert_master/run_classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="116" column="23" lean-forward="true" selection-start-line="116" selection-start-column="23" selection-end-line="116" selection-end-column="23" />
         </state>
       </provider>
     </entry>
